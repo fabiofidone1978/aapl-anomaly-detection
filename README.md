@@ -1,18 +1,36 @@
-# aapl-anomaly-detection# Anomaly Detection su Titoli AAPL
+# Financial Anomaly Detection su AAPL (Simulato)
 
-Analisi avanzata su dati simulati del titolo Apple Inc. (AAPL) per l'identificazione di anomalie nei prezzi azionari.  
-Si applicano tecniche statistiche e machine learning su serie temporali per individuare comportamenti anomali di mercato.
+Rilevamento anomalie nei prezzi azionari di un titolo simulato ispirato ad Apple Inc.  
+L'analisi combina metodi statistici e modelli non supervisionati per individuare outlier su serie temporali.
 
-## 📌 Obiettivi
-- Individuare outlier nei prezzi tramite Z-Score e Bande di Bollinger
-- Validare anomalie con modello di isolamento non supervisionato (Isolation Forest)
+## Obiettivi
 
-## 🧰 Tecnologie
-- Python
-- Pandas, Scikit-learn, Matplotlib
-- Tecniche: Z-Score, Bollinger Bands, Isolation Forest
+- Analizzare andamenti di prezzo in una logica daily trading.
+- Applicare modelli di outlier detection per supportare decisioni di rischio.
+- Visualizzare visivamente segnali anomali e pattern di rottura.
 
-## ▶️ Esecuzione
+## Tecnologie
+
+- Python 3
+- Pandas, Numpy
+- Scikit-learn (Isolation Forest)
+- Matplotlib
+
+## Struttura
+
+📦 aapl-anomaly-detection
+├── anomaly_detection_aapl.py
+├── aapl_anomaly_detection_2023.csv
+├── aapl_anomalies_2023.png
+└── README.md
+
+
+## Esecuzione
 
 ```bash
+pip install pandas scikit-learn matplotlib
 python anomaly_detection_aapl.py
+
+## *OUTPUT*
+aapl_anomalies_2023.png: evidenzia anomalie con colori distintivi.
+aapl_anomaly_detection_2023.csv: include prezzi e flag di anomalia.
